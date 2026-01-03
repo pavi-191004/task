@@ -1,4 +1,8 @@
-export const user = {
+
+import React from 'react'
+
+export const Errorhandling = () => {
+    const user = {
   name: "Pavithra",
   address: {
     city: "Chennai"
@@ -19,4 +23,8 @@ return(
   
 
 )
+
+}
+
+
 

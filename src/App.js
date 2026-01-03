@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import { Form } from './Form/Form';
-import { FormDetials } from './Form/FormDetials';
+
+import {Errorhandling} from './Error/Errorhandling'
 function App() {
   return (
-    <Form/>
-    // <FormDetials/>
+    // <Form/>
+   
+    <Errorhandling/>
   );
 }
 
