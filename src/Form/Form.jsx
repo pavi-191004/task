@@ -21,7 +21,7 @@ export const Form = () => {
 
     if (data.age.trim() === "") {
   newErrors.age = "Age is required";
-    } else if (Number(data.age) || Number(data.age) <= 0) {
+    } else if (Number(data.age)>120 || Number(data.age) <= 0) {
  newErrors.age = "Age must be a valid number";
     }
 
@@ -48,6 +48,9 @@ newErrors.email = "Invalid email format";
     if (Object.keys(validationErrors).length === 0) {
 alert("Form submitted successfully ");
       console.log(data);
+    }
+    else{
+      alert("Form is not valid")
     }
   };
 
@@ -90,7 +93,7 @@ alert("Form submitted successfully ");
         {errors.email && <p style={{ color: "red" }}>{errors.email}</p>}
 
         <label>City:</label>
-<input
+       <input
           name="city"
           value={data.city}
           onChange={handleOnChange}

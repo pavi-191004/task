@@ -16,7 +16,7 @@ const phone = user.profile?.phone ?? "Phone not available";
 return(
     <>
     {user.address?.city}
-{user.address?.pincode}
+{user.address.pincode}
 {email}
 {phone}
     </>
